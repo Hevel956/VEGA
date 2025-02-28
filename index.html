@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vega Sosa Productions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Graduate&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="overlay">
+      <nav>
+        <div class="logo">Vega Sosa Productions</div>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#mixtapes">Mixtapes</a></li>
+          <li><a href="#playlist">Playlist</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h1>Houston Mex</h1>
+        <p>Texas Made Beats</p>
+        <a href="#playlist" class="cta">Listen Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mixtape Gallery -->
+  <section id="mixtapes" class="mixtapes">
+    <h2>Latest Mixtapes</h2>
+    <div class="gallery">
+      <div class="mixtape">
+        <img src="images/mixtape2.jpg" alt="Mixtape 1">
+        <p>Mixtape 1</p>
+      </div>
+      <div class="mixtape">
+        <img src="images/mixtape3.jpg" alt="Mixtape 2">
+        <p>Mixtape 2</p>
+      </div>
+      <div class="mixtape">
+        <img src="images/mixtape4.jpg" alt="Mixtape 3">
+        <p>Mixtape 3</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SoundCloud Playlist -->
+  <section id="playlist" class="playlist">
+    <h2>Vega Sosa Playlist</h2>
+    <iframe width="50%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/user-51670305"></iframe>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Vega Sosa</h2>
+    <div class="about-content">
+      <img src="images/vega-sosa.jpg" alt="Vega Sosa">
+      <p>Vega Sosa is a Houston-based producer bringing the chopped and screwed vibes to the world. With slowed-down beats and a unique sound, Vega Sosa is redefining the Houston screw scene.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get in Touch</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-links">
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://soundcloud.com" target="_blank"><i class="fab fa-soundcloud"></i></a>
+    </div>
+    <p>&copy; 2023 Vega Sosa Productions</p>
+  </footer>
+
+  <!-- JavaScript for Mobile Menu -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
